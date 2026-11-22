@@ -1,0 +1,20 @@
+/* Navigation follows the document language. Charts and branding retain their axes. */
+.arrow{left:auto!important;right:auto!important;inset-inline-end:12px!important}
+html[dir=ltr] .arrow svg,html[dir=ltr] .continue>span svg{transform:scaleX(-1)}
+.continue>span{left:auto!important;right:auto!important;inset-inline-end:22px!important}
+.feature,.welcome h1,.exam-sub{text-align:start}
+.exam-sub{padding-right:0;padding-inline-start:6px}
+.about{left:auto;right:auto;inset-inline-end:35px}
+.advice-grid{direction:inherit}
+.advice{direction:inherit}
+/* Keep completion indicators on the right, as requested, in both languages. */
+html[dir=ltr] .progress-list li{flex-direction:row-reverse}
+.progress-list .text{text-align:start;padding-right:0;padding-inline-start:3px}
+html[dir=ltr] .oxygen-info{direction:ltr}
+html[dir=ltr] .welcome p,html[dir=ltr] .feature p{line-height:1.6}
+html[dir=ltr] .feature{padding-right:44px}
+/* Never reverse numerical readings, scale ticks, or the emergency swipe gesture. */
+.bp-values,.range-track,.range-ticks,.metric-unit,.oxygen-value{direction:ltr}
+.arrow svg{display:block;width:18px;height:18px}
+.feature .arrow{display:grid;place-items:center}
+@media(max-width:320px){.continue>span{inset-inline-end:15px!important}}
